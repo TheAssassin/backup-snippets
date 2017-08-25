@@ -1,0 +1,8 @@
+#! /bin/bash
+
+if [ "$DATE" == "" ]; then
+    echo "Fatal: DATE not set!"
+    exit 1
+fi
+
+bash ./cleanup.sh

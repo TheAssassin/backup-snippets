@@ -1,0 +1,10 @@
+#! /bin/bash
+
+if [ "$DATE" == "" ]; then
+    echo "Fatal: DATE not set!"
+    exit 1
+fi
+
+bash ./dump-docker-databases.sh
+bash ./dump-host-databases.sh
+bash ./dump-host-metainformation.sh
